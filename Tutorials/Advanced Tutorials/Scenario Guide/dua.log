@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+['/usr/local/Cellar/sumo/1.2.0/share/sumo/bin/duarouter', '-c', 'iteration_000_trips.duarcfg']
+Loading configuration... done.
+Error: No connection between edge '-23014096#4' and edge '-4473825#2' found.
+Error: Mandatory edge '-4473825#2' not reachable by vehicle '5'.
+Error: The vehicle '5' has no valid route.
+Error: No connection between edge '-4967217#10' and edge '534511778#1' found.
+Error: Mandatory edge '534511778#1' not reachable by vehicle '56'.
+Error: The vehicle '56' has no valid route.
+Error: No connection between edge '4447561#6' and edge '23014096#2' found.
+Error: Mandatory edge '23014096#2' not reachable by vehicle '92'.
+Error: The vehicle '92' has no valid route.
+Error: No connection between edge '-4795323#1' and edge '23014096#3' found.
+Error: Mandatory edge '23014096#3' not reachable by vehicle '101'.
+Error: The vehicle '101' has no valid route.
+Error: No connection between edge '-4316747#3' and edge '23014096#5' found.
+Error: Mandatory edge '23014096#5' not reachable by vehicle '167'.
+Error: The vehicle '167' has no valid route.
+Error: No connection between edge '-23014096#2' and edge '4473829#2' found.
+Error: Mandatory edge '4473829#2' not reachable by vehicle '172'.
+Error: The vehicle '172' has no valid route.
+Error: No connection between edge '95704610#16' and edge '23014096#4' found.
+Error: Mandatory edge '23014096#4' not reachable by vehicle '177'.
+Error: The vehicle '177' has no valid route.
+Quitting (on error).

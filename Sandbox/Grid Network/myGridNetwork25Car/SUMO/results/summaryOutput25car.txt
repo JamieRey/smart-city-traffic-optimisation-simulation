@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Thu 30 Jan 19:24:25 2020 by Eclipse SUMO GUI Version 1.2.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/Users/jamie/Documents/University/Third%20Year/Project/GitHub/Sandbox/Grid%20Network/myGridNetwork25Car/SUMO/net.net.xml"/>
+        <route-files value="/Users/jamie/Documents/University/Third%20Year/Project/GitHub/Sandbox/Grid%20Network/myGridNetwork25Car/SUMO/routes25car.rou.xml"/>
+    </input>
+
+    <output>
+        <write-license value="true"/>
+        <human-readable-time value="true"/>
+        <summary-output value="/Users/jamie/Documents/University/Third%20Year/Project/GitHub/Sandbox/Grid%20Network/myGridNetwork25Car/SUMO/results/summaryOutput25car.txt"/>
+        <tripinfo-output value="/Users/jamie/Documents/University/Third%20Year/Project/GitHub/Sandbox/Grid%20Network/myGridNetwork25Car/SUMO/results/tripInfo25car.txt"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <step-length value="0.05"/>
+    </time>
+
+    <processing>
+        <route-steps value="250"/>
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <gui_only>
+        <gui-settings-file value="/Users/jamie/Documents/University/Third%20Year/Project/GitHub/Sandbox/Grid%20Network/myGridNetwork25Car/SUMO/settings.settings.xml"/>
+        <quit-on-end value="false"/>
+        <start value="false"/>
+        <tracker-interval value="0.05"/>
+    </gui_only>
+
+</configuration>

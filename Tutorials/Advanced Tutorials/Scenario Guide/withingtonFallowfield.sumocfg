@@ -1,0 +1,6 @@
+<configuration>
+    <input>
+       <net-file value="withingtonFallowfield.net.xml"/>
+	<route-files value="withingtonFallowfield.rou.xml"/>
+    </input>
+</configuration>
