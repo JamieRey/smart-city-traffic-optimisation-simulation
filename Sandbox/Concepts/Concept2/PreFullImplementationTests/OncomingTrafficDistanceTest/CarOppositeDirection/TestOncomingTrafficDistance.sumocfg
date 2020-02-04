@@ -32,7 +32,7 @@
     </time>
 
     <processing>
-        <route-steps value="250"/>
+        <route-steps value="20"/>
     </processing>
 
     <routing>

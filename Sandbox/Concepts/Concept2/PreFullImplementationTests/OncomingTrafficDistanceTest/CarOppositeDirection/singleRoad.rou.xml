@@ -30,4 +30,5 @@
 
     <vehicle id="vehicle_0" type="type1" depart="0.00" route="route_0" />
     <vehicle id="vehicle_1" type="type1" depart="0.00" route="route_1" />
+    <vehicle id="vehicle_2" type="type1" depart="1.00" route="route_0" />
 </routes>

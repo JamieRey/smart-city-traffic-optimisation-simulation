@@ -7,7 +7,7 @@
         <net-file value="singleRoad.net.xml"/>
         <route-files value="singleRoad.rou.xml"/>
         <gui-settings-file value="settings.settings.xml"/>
-        <start value="false"/>
+        <start value="true"/>
         <quit-on-end value="true"/>
     </input>
 

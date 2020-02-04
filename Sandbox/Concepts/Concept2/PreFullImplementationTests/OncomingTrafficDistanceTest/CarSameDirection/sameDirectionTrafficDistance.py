@@ -10,15 +10,10 @@ else:
 
 
 sumoBinary = "/usr/local/Cellar/sumo/1.2.0/share/sumo/bin/sumo-gui"
-sumoCmd = [sumoBinary, "-c", "oncomingTrafficDistance.sumocfg"]
-# sumoCmd = ['sumo', "-c", "oncomingTrafficDistance.sumocfg"]
+sumoCmd = [sumoBinary, "-c", "sameDirectionTrafficDistance.sumocfg"]
+
 
 #   ---   ---   ---   ---
-
-#  Distance of car on oppostie side of road
-#
-#  !DONE! Be able to access any or all of the cars !DONE!
-    # !DONE! Simply change the colour of any simple characteristic !DONE!
 
 import traci as tr
 
@@ -40,14 +35,14 @@ class VehiclePosition:
     def getYPos(self):
         return self.yPos
 
+    def getDirection(self):
+        return tr.vehicle.getAngle(self.vehicleId)
+
     def setColor(self, color):
         tr.vehicle.setColor(self.vehicleId, color)
 
     def printInfo(self):
         print(" - VehicleID: ", self.vehicleId, "\n - X Position: ", self.xPos, "\n - Y Position: ", self.yPos)
-
-
-
 
 tr.start(sumoCmd)
 
@@ -92,8 +87,12 @@ while tr.simulation.getMinExpectedNumber() > 0:
 
                 safeToOvertake = None
                 safeDistance = 20
+                # TODO Accurately calculate Safe Distance
+                # print("getHeight: ",tr.vehicle.getHeight(vehicleId))
+                # print("getLength: ",tr.vehicle.getLength(vehicleId))
                 carAreas = math.sqrt(((vp2x - vp1x)**2) + ((vp2y - vp1y)**2))
 
+                # Is car within geo-fence
                 if carAreas >= 2*safeDistance:
                     vp1.setColor(green)
                     vp2.setColor(green)
@@ -101,12 +100,12 @@ while tr.simulation.getMinExpectedNumber() > 0:
                     vp1.setColor(red)
                     vp2.setColor(red)
 
-                # Is car within geo-fence
-                # print("getHeight: ",tr.vehicle.getHeight(vehicleId))
-                # print("getLength: ",tr.vehicle.getLength(vehicleId))
-
-                # Is car going the opposite direction
-
+                # Is car going the opposite OR same direction
+                if vp1.getDirection() == vp2.getDirection():
+                    print("Same Direction")
+                else:
+                    print("Opposite Direction")
+                
 # getLateralAlignment
 
             # print("getLaneID: ",tr.vehicle.getLaneID(vehicleId))
