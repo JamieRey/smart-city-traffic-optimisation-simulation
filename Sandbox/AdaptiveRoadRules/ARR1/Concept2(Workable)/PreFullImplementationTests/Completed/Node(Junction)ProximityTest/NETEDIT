@@ -1,0 +1,9 @@
+if [ $SUMO_HOME == "/your/path/to/sumo" ]
+then 
+	echo "You must set your SUMO_HOME path variable"
+else 
+	echo "Your path variable is set to " "\""$SUMO_HOME"\""
+	echo "Launching SUMO GUI"
+	$SUMO_HOME/bin/netedit
+fi
+exit()

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Sun  2 Feb 18:59:20 2020 by Eclipse SUMO netedit Version 1.2.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <output>
+        <output-file value="/Users/jamie/Documents/University/Third%20Year/Project/GitHub/Sandbox/Concepts/Concept%202/Pre%20Full%20Implementation%20Tests/Oncoming%20Traffic%20Distance%20Test/singleRoad.net.xml"/>
+    </output>
+
+    <processing>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+    <netedit>
+        <route-files value="/Users/jamie/Documents/University/Third%20Year/Project/GitHub/Sandbox/Concepts/Concept%202/Pre%20Full%20Implementation%20Tests/Oncoming%20Traffic%20Distance%20Test/singleRoad.rou"/>
+    </netedit>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <route id="route_0" edges="-gneE0" color="blue"/>
+    <route id="route_1" edges="gneE0" color="blue"/>
+
+<vType id="type1" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="5"/>
+
+    <vehicle id="vehicle_0" type="type1" depart="0.00" route="route_0" />
+    <vehicle id="vehicle_1" type="type1" depart="0.00" route="route_1" />
+    <vehicle id="vehicle_2" type="type1" depart="1.00" route="route_0" />
+</routes>

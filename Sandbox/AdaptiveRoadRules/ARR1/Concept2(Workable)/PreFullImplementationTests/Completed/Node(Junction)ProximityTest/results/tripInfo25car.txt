@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Thu Feb  6 19:54:21 2020 by Eclipse SUMO GUI Version 1.2.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="junctionProximityTest.net.xml"/>
+        <route-files value="junctionProximityTestRoutes.rou.xml"/>
+    </input>
+
+    <output>
+        <write-license value="true"/>
+        <human-readable-time value="true"/>
+        <summary-output value="results/summaryOutput25car.txt"/>
+        <tripinfo-output value="results/tripInfo25car.txt"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <step-length value="0.05"/>
+    </time>
+
+    <processing>
+        <route-steps value="250"/>
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="63152"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="settings.settings.xml"/>
+        <quit-on-end value="true"/>
+        <start value="true"/>
+        <tracker-interval value="0.05"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <tripinfo id="vehicle_3" depart="00:00:00.00" departLane="-gneE27_0" departPos="5.10" departSpeed="0.00" departDelay="00:00:00.00" arrival="00:00:40.85" arrivalLane="gneE24_0" arrivalPos="42.80" arrivalSpeed="4.99" duration="00:00:40.85" routeLength="184.16" waitingTime="00:00:00.10" waitingCount="1" stopTime="00:00:00.00" timeLoss="00:00:04.02" rerouteNo="0" devices="tripinfo_vehicle_3" vType="type0" speedFactor="1.01" vaporized=""/>
+    <tripinfo id="vehicle_6" depart="00:00:00.00" departLane="-gneE23_0" departPos="5.10" departSpeed="0.00" departDelay="00:00:00.00" arrival="00:00:41.90" arrivalLane="gneE28_0" arrivalPos="42.80" arrivalSpeed="5.00" duration="00:00:41.90" routeLength="189.53" waitingTime="00:00:00.10" waitingCount="1" stopTime="00:00:00.00" timeLoss="00:00:03.99" rerouteNo="0" devices="tripinfo_vehicle_6" vType="type0" speedFactor="1.06" vaporized=""/>
+    <tripinfo id="vehicle_4" depart="00:00:04.80" departLane="-gneE27_0" departPos="5.10" departSpeed="0.00" departDelay="00:00:04.80" arrival="00:00:45.55" arrivalLane="gneE24_0" arrivalPos="42.80" arrivalSpeed="4.99" duration="00:00:40.75" routeLength="184.16" waitingTime="00:00:00.10" waitingCount="1" stopTime="00:00:00.00" timeLoss="00:00:03.93" rerouteNo="0" devices="tripinfo_vehicle_4" vType="type0" speedFactor="1.08" vaporized=""/>
+    <tripinfo id="vehicle_9" depart="00:00:04.80" departLane="-gneE23_0" departPos="5.10" departSpeed="0.00" departDelay="00:00:04.80" arrival="00:00:46.70" arrivalLane="gneE28_0" arrivalPos="42.80" arrivalSpeed="5.00" duration="00:00:41.90" routeLength="189.53" waitingTime="00:00:00.10" waitingCount="1" stopTime="00:00:00.00" timeLoss="00:00:03.99" rerouteNo="0" devices="tripinfo_vehicle_9" vType="type0" speedFactor="0.94" vaporized=""/>
+    <tripinfo id="vehicle_5" depart="00:00:09.55" departLane="-gneE27_0" departPos="5.10" departSpeed="0.00" departDelay="00:00:09.55" arrival="00:00:50.45" arrivalLane="gneE24_0" arrivalPos="42.80" arrivalSpeed="4.98" duration="00:00:40.90" routeLength="184.16" waitingTime="00:00:00.10" waitingCount="1" stopTime="00:00:00.00" timeLoss="00:00:04.07" rerouteNo="0" devices="tripinfo_vehicle_5" vType="type0" speedFactor="1.03" vaporized=""/>
+    <tripinfo id="vehicle_2" depart="00:00:40.00" departLane="-gneE27_0" departPos="5.10" departSpeed="0.00" departDelay="00:00:00.00" arrival="00:01:20.95" arrivalLane="gneE24_0" arrivalPos="42.80" arrivalSpeed="4.99" duration="00:00:40.95" routeLength="184.16" waitingTime="00:00:00.10" waitingCount="1" stopTime="00:00:00.00" timeLoss="00:00:04.12" rerouteNo="0" devices="tripinfo_vehicle_2" vType="type0" speedFactor="0.83" vaporized=""/>
+    <tripinfo id="vehicle_7" depart="00:00:50.00" departLane="-gneE30_0" departPos="5.10" departSpeed="0.00" departDelay="00:00:00.00" arrival="00:01:33.10" arrivalLane="gneE23_0" arrivalPos="42.80" arrivalSpeed="4.98" duration="00:00:43.10" routeLength="194.90" waitingTime="00:00:00.10" waitingCount="1" stopTime="00:00:00.00" timeLoss="00:00:04.10" rerouteNo="0" devices="tripinfo_vehicle_7" vType="type0" speedFactor="1.05" vaporized=""/>
+</tripinfos>

@@ -1,0 +1,85 @@
+CREATING A NETWORK
+
+--
+
+How to generate grid networks with NETGENERATE.
+
+--
+
+Type "netgenerate -g" into terminal to specify a grid network.
+
+After use the following options to customise 
+
+--
+
+Here's a link to the entire documentation: https://sumo.dlr.de/docs/NETGENERATE.html
+
+-- 
+
+CREATING THE VEHICLE ROUTES
+
+--
+
+Ease method of populating the network with vehicles
+
+	- Run $SUMO_HOME/tools/randomTrips.py
+	
+	- Here's the command options
+
+		- -n "networkToBePopulated.net.xml"
+
+		- -o "nameOfOutputXmlFile.trips.xml"
+
+		- -b begining trip time
+
+		- -e end trip time
+
+		- -p trip repetition rate 
+	
+--
+
+Here's a link to the entire documentation: https://sumo.dlr.de/docs/Tools/Trip.html#randomtripspy
+
+
+--
+
+After generating the .trips.xml file, you must use the DUAROUTER tool to 
+generate the routes file (.rou.xml)
+
+--
+
+To generate the route files, run duarouter in the simulations directory
+
+	- Here's the options
+
+		- --route-files "tripsXmlFile.trips.xml"
+
+		- --net-file "networkFile.net.xml"
+
+		- --output-file "nameOfOutputFile.rou.xml"
+
+--
+
+CREATING A CONFIGURATION FILE
+
+--
+
+A configuration file is a simple way of minimising the amount of command 
+line commands that you need to type in.
+
+The template which can be generated is too complicated for what we're 
+doing, so I recomend writing your own configuration file.
+
+You must at least specify:
+
+	- The .net.xml file
+
+	- The .rou.xml file
+
+Optionally, you can specify:
+
+	- .setting.xml
+
+--
+
+
