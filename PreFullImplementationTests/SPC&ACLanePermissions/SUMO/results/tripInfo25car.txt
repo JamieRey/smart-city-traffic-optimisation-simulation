@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Fri Feb 21 20:24:28 2020 by Eclipse SUMO GUI Version 1.2.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="SUMO/SPCACLanePermissions.net.xml"/>
+        <route-files value="SUMO/SPCACLanePermissions.rou.xml"/>
+    </input>
+
+    <output>
+        <write-license value="true"/>
+        <human-readable-time value="true"/>
+        <summary-output value="SUMO/results/summaryOutput25car.txt"/>
+        <tripinfo-output value="SUMO/results/tripInfo25car.txt"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <step-length value="0.2"/>
+    </time>
+
+    <processing>
+        <route-steps value="250"/>
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="53587"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="SUMO/settings.settings.xml"/>
+        <quit-on-end value="false"/>
+        <start value="true"/>
+        <tracker-interval value="0.2"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+</tripinfos>

@@ -1,1 +1,0 @@
-%SUMO_HOME%/tests/complex/tutorial/hello/runner.py 

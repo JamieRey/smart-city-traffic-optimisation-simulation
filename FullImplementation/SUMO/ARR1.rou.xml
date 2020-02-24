@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Tue Feb 11 12:33:18 2020 by Eclipse SUMO duarouter Version 1.2.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="CorrectLaneMogration.net.xml"/>
+        <route-files value="CorrectLaneMogration.trip.xml"/>
+    </input>
+
+    <output>
+        <output-file value="CorrectLaneMogration.rou.xml"/>
+        <alternatives-output value="CorrectLaneMogration.rou.alt.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    
+    <!-- Default Vehicles -->
+    <vType id="passenger" tau="0.1" minGap = "0.5" maxSpeed = "5" vClass="passenger" probability="0.4"/>
+    <!-- <vType id="" vClass="" probability=""/> -->
+    <!-- <vType id="" vClass="" probability=""/> -->
+    <!-- <vType id="" vClass="" probability=""/> -->
+    <!-- <vType id="" vClass="" probability=""/> -->
+
+    <!-- S.P.C -->
+    <vType 
+        id="SPC"
+        length="2.1" 
+        width="0.8"
+        minGap="0.5"
+        accel="600"
+        decel="7"
+        emergencyDecel="10"
+        maxSpeed="200"
+        tau="0.1"
+
+        sigma="0.5"
+        color="orange"
+        
+        vClass="custom1"
+        guiShape="evehicle"
+        probability="0.6"
+        
+        lcSublane = "200000"
+        lcPushy="1"
+        lcAssertive="1"
+        lcImpatience="1"
+        lcTimeToImpatience="1"
+        maxSpeedLat = "1000000"
+        latAlignment="nice"/>
+
+    <!-- S.P.C.O  -->
+    <vType 
+        id="SPCO"
+        length="2.1" 
+        width="0.8"
+        minGap="0.5"
+        accel="600"
+        decel="7"
+        emergencyDecel="10"
+        maxSpeed="200"
+        tau="0.1"
+
+        sigma="0.5"
+        color="green"
+        
+        vClass="custom2"
+        guiShape="bus"
+        probability="0"
+
+        lcSublane = "200000"
+        lcPushy="1"
+        lcAssertive="1"
+        lcImpatience="1"
+        lcTimeToImpatience="1"
+        maxSpeedLat = "1000000"
+        latAlignment="nice"/>
+
+    <vTypeDistribution id="SPCS" vTypes="passenger SPC SPCO"/>
+    
+    <vehicle id="1" type="SPCS" depart="2.00">
+        <route edges="C1B1 B1A1 A1A2"/>
+    </vehicle>
+    <vehicle id="4" type="SPCS" depart="8.00">
+        <route edges="B0A0 A0A1 A1A2 A2B2 B2C2 C2C1"/>
+    </vehicle>
+    <vehicle id="5" type="SPCS" depart="10.00">
+        <route edges="A2B2 B2B1 B1B0"/>
+    </vehicle>
+    <vehicle id="7" type="SPCS" depart="14.00">
+        <route edges="B2C2 C2C1"/>
+    </vehicle>
+    <vehicle id="8" type="SPCS" depart="16.00">
+        <route edges="C1B1 B1A1 A1A2 A2B2 B2B1 B1B0"/>
+    </vehicle>
+    <vehicle id="9" type="SPCS" depart="18.00">
+        <route edges="B1A1 A1A2 A2B2 B2B1 B1B0 B0A0 A0A1"/>
+    </vehicle>
+    <vehicle id="10" type="SPCS" depart="20.00">
+        <route edges="B1B2"/>
+    </vehicle>
+    <vehicle id="12" type="SPCS" depart="24.00">
+        <route edges="B2C2 C2C1 C1C0"/>
+    </vehicle>
+
+
+    <vehicle id="15" type="passenger" depart="30.00">
+        <route edges="A0B0 B0C0 C0C1 C1C2 C2B2"/>
+    </vehicle>
+    <vehicle id="17" type="passenger" depart="34.00">
+        <route edges="C0B0 B0A0 A0A1"/>
+    </vehicle>
+    <vehicle id="18" type="passenger" depart="36.00">
+        <route edges="C1C0 C0B0 B0B1 B1B2 B2C2 C2C1"/>
+    </vehicle>
+    <vehicle id="19" type="passenger" depart="38.00">
+        <route edges="B2B1"/>
+    </vehicle>
+
+
+
+    <vehicle id="22" type="passenger" depart="44.00">
+        <route edges="B0A0 A0A1 A1B1 B1C1"/>
+    </vehicle>
+    <vehicle id="24" type="SPC" depart="45.0">
+        <route edges="B1B0 B0A0 A0A1"/>
+    </vehicle>
+    <vehicle id="23" type="SPC" depart="45.0">
+        <route edges="B1B0 B0A0 A0A1"/>
+    </vehicle>
+
+
+    <vehicle id="25" type="SPCS" depart="50.00">
+        <route edges="C0C1 C1C2"/>
+    </vehicle>
+    <vehicle id="29" type="SPCS" depart="58.00">
+        <route edges="A1A2 A2B2 B2B1 B1A1"/>
+    </vehicle>
+    <vehicle id="31" type="SPCS" depart="62.00">
+        <route edges="B0A0 A0A1 A1A2 A2B2 B2C2 C2C1"/>
+    </vehicle>
+    <vehicle id="32" type="SPCS" depart="64.00">
+        <route edges="B2B1 B1A1 A1A2 A2B2 B2C2 C2C1"/>
+    </vehicle>
+    <vehicle id="33" type="SPCS" depart="66.00">
+        <route edges="B0A0 A0A1 A1A2"/>
+    </vehicle>
+    <vehicle id="35" type="SPCS" depart="70.00">
+        <route edges="C0B0 B0B1 B1B2"/>
+    </vehicle>
+    <vehicle id="38" type="SPCS" depart="76.00">
+        <route edges="C2B2 B2A2 A2A1 A1A0"/>
+    </vehicle>
+    <vehicle id="39" type="SPCS" depart="78.00">
+        <route edges="A2B2 B2B1 B1A1 A1A2"/>
+    </vehicle>
+    <vehicle id="42" type="SPCS" depart="84.00">
+        <route edges="A0B0 B0C0 C0C1 C1C2 C2B2"/>
+    </vehicle>
+    <vehicle id="44" type="SPCS" depart="88.00">
+        <route edges="A1A2 A2B2 B2C2 C2C1 C1C0 C0B0 B0B1 B1C1"/>
+    </vehicle>
+    <vehicle id="47" type="SPCS" depart="94.00">
+        <route edges="A2A1 A1A0 A0B0 B0C0"/>
+    </vehicle>
+    <vehicle id="48" type="SPCS" depart="96.00">
+        <route edges="B1A1 A1A2 A2B2 B2B1 B1B0"/>
+    </vehicle>
+    <vehicle id="49" type="SPCS" depart="98.00">
+        <route edges="B0A0 A0A1 A1A2 A2B2 B2C2 C2C1 C1B1 B1B2"/>
+    </vehicle>
+    <vehicle id="52" type="SPCS" depart="104.00">
+        <route edges="B1A1 A1A2 A2B2 B2C2 C2C1"/>
+    </vehicle>
+    <vehicle id="55" type="SPCS" depart="110.00">
+        <route edges="B0A0"/>
+    </vehicle>
+    <vehicle id="57" type="SPCS" depart="114.00">
+        <route edges="C1C0 C0B0 B0A0 A0A1 A1A2"/>
+    </vehicle>
+    <vehicle id="59" type="SPCS" depart="118.00">
+        <route edges="B1B0 B0A0 A0A1 A1A2"/>
+    </vehicle>
+    <vehicle id="60" type="SPCS" depart="120.00">
+        <route edges="A2A1 A1A0 A0B0"/>
+    </vehicle>
+    <vehicle id="61" type="SPCS" depart="122.00">
+        <route edges="C1C0 C0B0 B0B1 B1B2 B2C2 C2C1"/>
+    </vehicle>
+    <vehicle id="63" type="SPCS" depart="126.00">
+        <route edges="C1B1 B1B2 B2C2 C2C1"/>
+    </vehicle>
+    <vehicle id="67" type="SPCS" depart="134.00">
+        <route edges="B2A2 A2A1 A1A0 A0B0 B0C0 C0C1 C1C2"/>
+    </vehicle>
+    <vehicle id="68" type="SPCS" depart="136.00">
+        <route edges="B0A0 A0A1 A1B1"/>
+    </vehicle>
+    <vehicle id="69" type="SPCS" depart="138.00">
+        <route edges="B2C2 C2C1 C1B1 B1A1"/>
+    </vehicle>
+    <vehicle id="70" type="SPCS" depart="140.00">
+        <route edges="B0B1 B1C1 C1C0 C0B0 B0A0 A0A1 A1A2"/>
+    </vehicle>
+    <vehicle id="72" type="SPCS" depart="144.00">
+        <route edges="C1B1 B1B2 B2C2 C2C1 C1C0 C0B0 B0A0"/>
+    </vehicle>
+    <vehicle id="73" type="SPCS" depart="146.00">
+        <route edges="C0B0"/>
+    </vehicle>
+    <vehicle id="74" type="SPCS" depart="148.00">
+        <route edges="C1C2 C2B2 B2A2 A2A1 A1A0"/>
+    </vehicle>
+    <vehicle id="75" type="SPCS" depart="150.00">
+        <route edges="C0C1 C1C2 C2B2 B2A2 A2A1 A1A0 A0B0"/>
+    </vehicle>
+    <vehicle id="76" type="SPCS" depart="152.00">
+        <route edges="B0B1 B1B2"/>
+    </vehicle>
+    <vehicle id="79" type="SPCS" depart="158.00">
+        <route edges="C1B1 B1B2 B2C2 C2C1"/>
+    </vehicle>
+    <vehicle id="80" type="SPCS" depart="160.00">
+        <route edges="A1A0 A0B0 B0C0"/>
+    </vehicle>
+    <vehicle id="81" type="SPCS" depart="162.00">
+        <route edges="A2A1 A1A0 A0B0"/>
+    </vehicle>
+    <vehicle id="82" type="SPCS" depart="164.00">
+        <route edges="C1C0 C0B0 B0A0 A0A1 A1A2"/>
+    </vehicle>
+    <vehicle id="83" type="SPCS" depart="166.00">
+        <route edges="B1B0 B0A0 A0A1 A1A2 A2B2 B2C2 C2C1 C1B1"/>
+    </vehicle>
+    <vehicle id="84" type="SPCS" depart="168.00">
+        <route edges="C1B1 B1B2 B2C2 C2C1"/>
+    </vehicle>
+    <vehicle id="87" type="SPCS" depart="174.00">
+        <route edges="A0A1 A1B1"/>
+    </vehicle>
+    <vehicle id="88" type="SPCS" depart="176.00">
+        <route edges="B0A0 A0A1 A1B1 B1C1 C1C0 C0B0 B0B1"/>
+    </vehicle>
+    <vehicle id="90" type="SPCS" depart="180.00">
+        <route edges="A0B0 B0C0 C0C1 C1C2 C2B2 B2A2 A2A1"/>
+    </vehicle>
+    <vehicle id="97" type="SPCS" depart="194.00">
+        <route edges="A2A1 A1A0 A0B0 B0C0 C0C1 C1C2 C2B2"/>
+    </vehicle>
+    <vehicle id="98" type="SPCS" depart="196.00">
+        <route edges="A0B0 B0C0 C0C1 C1C2 C2B2"/>
+    </vehicle>
+</routes>

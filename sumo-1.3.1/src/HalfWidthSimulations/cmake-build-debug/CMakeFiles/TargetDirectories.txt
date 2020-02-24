@@ -1,3 +1,0 @@
-/Users/jamie/Documents/University/Third Year/Project/SUMO/sumo-1.3.1/src/HalfWidthSimulations/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/jamie/Documents/University/Third Year/Project/SUMO/sumo-1.3.1/src/HalfWidthSimulations/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/jamie/Documents/University/Third Year/Project/SUMO/sumo-1.3.1/src/HalfWidthSimulations/cmake-build-debug/CMakeFiles/HalfWidthSimulations.dir
