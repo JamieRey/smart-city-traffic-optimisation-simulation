@@ -32,7 +32,7 @@ Ease method of populating the network with vehicles
 
 		- -n "networkToBePopulated"
 
-		- -o "nameOfOutputXmlFile.trip.xml"
+		- -o "nameOfOutputXmlFile.trips.xml"
 
 		- -b begining trip time
 

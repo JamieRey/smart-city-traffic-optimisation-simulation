@@ -81,7 +81,7 @@
 
     <vTypeDistribution id="SPCS" vTypes="passenger SPC SPCO"/>
     
-    <vehicle id="1" type="SPCS" depart="2.00">
+    <!-- <vehicle id="1" type="SPCS" depart="2.00">
         <route edges="C1B1 B1A1 A1A2"/>
     </vehicle>
     <vehicle id="4" type="SPCS" depart="8.00">
@@ -104,7 +104,7 @@
     </vehicle>
     <vehicle id="12" type="SPCS" depart="24.00">
         <route edges="B2C2 C2C1 C1C0"/>
-    </vehicle>
+    </vehicle> -->
 
 
     <vehicle id="15" type="passenger" depart="30.00">
@@ -133,7 +133,7 @@
     </vehicle>
 
 
-    <vehicle id="25" type="SPCS" depart="50.00">
+    <!-- <vehicle id="25" type="SPCS" depart="50.00">
         <route edges="C0C1 C1C2"/>
     </vehicle>
     <vehicle id="29" type="SPCS" depart="58.00">
@@ -252,5 +252,5 @@
     </vehicle>
     <vehicle id="98" type="SPCS" depart="196.00">
         <route edges="A0B0 B0C0 C0C1 C1C2 C2B2"/>
-    </vehicle>
+    </vehicle> -->
 </routes>

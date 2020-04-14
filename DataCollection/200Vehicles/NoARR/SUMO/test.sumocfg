@@ -1,0 +1,36 @@
+<configuration>
+
+    <!-- Reference to the config file documentations -->
+    <!-- https://sumo.dlr.de/docs/SUMO.html#time -->
+
+    <input>
+        <net-file value="test.net.xml"/>
+        <route-files value="100Vehicles.rou.xml"/>
+        <gui-settings-file value="test.settings.xml"/>
+        <start value="true"/>
+        <quit-on-end value="false"/>
+        <lateral-resolution value="0.8"/>
+    </input>
+
+    <output>
+        <human-readable-time value="false"/>
+        
+        <summary-output value="results/summaryOutput25car.xml"/>
+
+        <!-- TRIP INFO -->
+        <tripinfo-output value="results/tripInfo25car.xml"/>
+        <!-- duration & routeLength can be extracted from this file for each vehicle -->
+        <!-- gives me an average speed -->
+        <!-- duration="00:00:19.95" routeLength="170.77" -->
+    </output>
+
+    <time>
+        <begin value="28.0"/>
+        <step-length value="0.15"/>
+    </time>
+
+    <processing>
+        <route-steps value="250"/>
+    </processing>
+ 
+</configuration>
